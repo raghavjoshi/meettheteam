@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brandery Meet the Team!</title>
+</head>
+<body>
+	<style>
+
+        * {
+            /* Suppress default user-agent styles */
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            -webkit-padding-start: 0;
+        }
+		body {
+			margin: 0 0;
+			padding: 0 0;
+            background-color: #000;
+		}
+		.video-slider {
+			margin: 0 0;
+			padding: 0 0;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		ul.slides-wrapper {
+			list-style-type: none;
+		}
+		li.video-slide {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			width: 625px;
+			height: 536px;
+		}
+		li.video-slide:not(:first-child) { margin-left: -5px; }
+		li.video-slide video { margin-left: -3px; }
+        li.video-slide a {
+            position: absolute;
+            cursor: pointer;
+        }
+        li.video-slide a.door {
+            top: 38px;
+            right: 14px;
+            width: 196px;
+            height: 460px;
+        }
+        li.video-slide a.company {
+			top: 18px;
+            left: 40px;
+            width: 314px;
+            height: 380px;
+            color: white;
+            text-decoration: none;
+        }
+		li.video-slide a.company * {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			opacity: 0.38;
+			-webkit-transition: all 0.26s ease-out;
+			-moz-transition: all 0.26s ease-out;
+			-o-transition: all 0.26s ease-out;
+			transition: all 0.26s ease-out;
+		}
+		li.video-slide a.company img {
+			margin-top: 45px;
+			width: 85%;
+			height: auto;
+		}
+		li.video-slide a.company span {
+			margin-top: 2px;
+			font-weight: 300;
+			font-size: 32px;
+		}
+        li.video-slide a.company ul.team-members { margin-top: 20px; opacity: 0.0; }
+        li.video-slide a.company ul.team-members li:not(:first-child) { margin-top: 10px; }
+
+		/* Hover behavior */
+		li.video-slide a.company:hover img,
+        li.video-slide a.company:hover span { opacity: 1.0; }
+        li.video-slide a.company:hover img  { margin-top: 28px; width: 50%; }
+		li.video-slide a.company:hover span { margin-top: 8px; font-size: 50px; }
+        li.video-slide a.company:hover ul.team-members { opacity: 1.0; }
+
+	</style>
+	<div class="video-slider">
+		<ul class="slides-wrapper">
+			<!--<li class="video-slide"><video src="videos/elevator_quack.mp4" autoplay loop></video></li>-->
+			<!--<li class="video-slide"><video src="videos/elevator_lookit.mp4" autoplay loop></video></li>-->
+			<!--<li class="video-slide"><video src="videos/elevator_shoutout.mp4" autoplay loop></video></li>-->
+			<!-- <li class="video-slide"><video src="videos/elevator_cintric-1.mp4" autoplay loop></video></li> -->
+            <!-- <li class="video-slide"><video src="videos/elevator_cintric-2.mp4" autoplay loop></video></li> -->
+            <li class="video-slide">
+                <video src="videos/elevator_hirewheel.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-hirewheel.png" alt="HireWheel">
+                    <span>HireWheel</span>
+                    <ul class="team-members">
+                        <li>Matt Lenahan, CEO</li>
+                        <li>Steve Sperry, CTO</li>
+                        <li>Joe Brewer, Lead Developer</li>
+                    </ul>
+                </a>
+            </li>
+            <li class="video-slide">
+                <video src="videos/elevator_keego.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-keego.png" alt="Keego">
+                    <span>Keego</span>
+                    <ul class="team-members">
+                        <li>Rodrigo Galindez, CEO & Product Lead</li>
+                        <li>Valentina Farallo, Community Manager</li>
+                        <li>Gonzalo Casas, Tech Lead</li>
+                    </ul>
+                </a>
+            </li>
+            <li class="video-slide">
+                <video src="videos/elevator_lagoon.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-lagoon.png" alt="Lagoon">
+                    <span>Lagoon</span>
+                    <ul class="team-members">
+                        <li>Eric Elias, CEO</li>
+                        <li>Nathan Heidt, CTO</li>
+                        <li>William Blum, CMO</li>
+                        <li>William Wiebe, Engineering</li>
+                    </ul>
+                </a>
+            </li>
+            <li class="video-slide">
+				<video src="videos/elevator_musicplay.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-musicplay.png" alt="MusicPlay Analytics">
+                    <span>MusicPlay Analytics</span>
+                    <ul class="team-members">
+                        <li>Eron Bucciarelli-Tieger, CEO</li>
+                        <li>Todd Tieger, CTO</li>
+                    </ul>
+                </a>
+			</li>
+			<li class="video-slide">
+				<video src="videos/elevator_popad.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-popad.png" alt="popAD">
+                    <span>popAD</span>
+                    <ul class="team-members">
+                        <li>John McClelland, CEO</li>
+                        <li>Luke Libraro, CTO</li>
+                        <li>Skylar Roebuck, CPO</li>
+                    </ul>
+                </a>
+			</li>
+			<li class="video-slide">
+				<video src="videos/elevator_shelfie.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-shelfie.png" alt="Shelfie">
+                    <span>Shelfie</span>
+                    <ul class="team-members">
+                        <li>C.J. Acosta, CEO</li>
+                        <li>Edward Betancourt, CTO</li>
+                    </ul>
+                </a>
+			</li>
+			<li class="video-slide">
+				<video src="videos/elevator_strap.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-strap.png" alt="Strap">
+                    <span>Strap</span>
+                    <ul class="team-members">
+                        <li>Steve Caldwell, CEO</li>
+                        <li>Patrick Henshaw, COO</li>
+                    </ul>
+                </a>
+			</li>
+			<li class="video-slide">
+				<video src="videos/elevator_venn.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-venn.png" alt="Venn">
+                    <span>Venn</span>
+                    <ul class="team-members">
+                        <li>Steffan Howey, CEO</li>
+                        <li>Ian Donahue, CPO</li>
+                        <li>Tim Giblin, CTO</li>
+                    </ul>
+                </a>
+			</li>
+			<li class="video-slide">
+				<video src="videos/elevator_waxmusic.mp4"></video>
+                <a class="door" href="#"></a>
+                <a class="company" href="#">
+                    <img src="img/logos/logo-waxmusic.png" alt="WaxMusic">
+                    <span>WaxMusic</span>
+                    <ul class="team-members">
+                        <li>Jonathan Lane, CEO</li>
+                        <li>Joe Landon, CTO</li>
+                        <li>Dr. John Paul Wolanin, CPO</li>
+                    </ul>
+                </a>
+			</li>
+		</ul>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        // Correct modulo behavior
+        Number.prototype.mod = function(n) {
+            var remainder = this % n;
+            return Math.floor(remainder >= 0) ? remainder : remainder + n;
+        };
+    </script>
+    <script>
+		(function(window, $, undefined) {
+
+			var Slider = function(options) {
+				this.initialize(options);
+			};
+
+			var p = Slider.prototype = { };
+			Slider.constructor = p.constructor = Slider;
+
+            // Static properties
+
+            Slider.DIRECTION_FORWARD = 'right';
+            Slider.DIRECTION_BACKWARD = 'left';
+
+            // Private properties
+
+			p._wrapper = null;
+			p._slideCount = null;
+			p._currentSlideIndex = null;
+            p._currentTimeoutID = null;
+
+            // Public properties
+
+            p.settings = {
+                'wrapper': $('ul.slider'),
+                'direction': Slider.DIRECTION_FORWARD,
+                'delay': 5000,
+                'speed': 450,
+                'easing': 'swing',
+                'autoplay': false,
+                'slideOffset': 0 // Corresponds with negative margin
+            };
+
+            // Constructor
+
+			p.initialize = function(options) {
+				// Extend the config with user-provided settings
+                $.extend(this.settings, options);
+                // Check that the assigned wrapper element is valid (is an element)
+                this._wrapper = this.settings.wrapper;
+				if(typeof this._wrapper === "undefined") {
+					throw new Error("Argument 'wrapper' must be an HTML element!");
+				}
+				this._currentSlideIndex = 0;
+				this._slideCount = this._wrapper.children().length;
+                // Auto-play if requested
+                this._rewrap();
+                if(this.settings.autoplay) this.play();
+			};
+
+            // Public methods
+
+            p.play = function() {
+                var instance = this;
+                function triggerCallback() {
+                    return window.setTimeout(function() {
+                        instance.transition();
+                        triggerCallback();
+                    }, instance.settings.delay);
+                }
+                p._currentTimeoutID = triggerCallback();
+                console.log(p._currentTimeoutID);
+            };
+
+            p.pause = function() {
+                window.clearTimeout.call(this, this._currentTimeoutID);
+            };
+
+            p.transition = function(direction, complete) {
+
+                // Handle parameter omissions
+                direction = (typeof direction !== "string") ? this.settings.direction : direction;
+                complete = (typeof complete !== "function") ? $.noop : complete;
+
+                // Update the current slide index based on transition direction
+                this._currentSlideIndex += (direction === Slider.DIRECTION_FORWARD) ? 1 : -1;
+                this._currentSlideIndex = this._currentSlideIndex.mod(this._slideCount);
+                this._rewrap();
+
+                // Transition animation from current slide to new slide
+                var slider = this;
+
+                // Assumes equal width of slides in slider
+                var slideWidth = slider._wrapper.children().eq(slider._currentSlideIndex).outerWidth(true);
+                var offset = slider._currentSlideIndex * slideWidth * -1;
+
+                var minOffset = (this._wrapper.width() - this._wrapper.parent().width()) * -1;
+                if(offset < minOffset) { offset = minOffset; }
+
+                this._wrapper.animate({ "margin-left": offset },
+                    this.settings.speed,
+                    this.settings.easing,
+                    complete.bind(slider));
+
+            };
+
+			// Private methods
+
+			p._rewrap = function() {
+                var width = $.makeArray(this._wrapper.children())
+                        .reduce(function (p, slide) {
+                            return p + parseInt($(slide).width())
+                        }, 0);
+				this._wrapper.css({
+					'width': width + 'px'
+				});
+			};
+
+            // Class export
+
+			window.Slider = Slider;
+
+		})(window, jQuery);
+	</script>
+	<script>
+		$(function() {
+            // Instantiate a new video slider
+            window.slider = new Slider({
+                'wrapper': $('.slides-wrapper'),
+                'delay': 6000,
+                'speed': 950,
+                'autoplay': true,
+                'slideOffset': -5
+            });
+            // Begin video playback on hover
+            $('.video-slide').on('mouseenter', 'a', function (e) {
+                var video = $(e.currentTarget).siblings('video')[0];
+                if (video.paused) {
+                    video.currentTime = 0.750;
+                    video.play();
+                }
+            });
+            // Allow manual navigation with arrow keys
+            window.addEventListener('keydown', function(e) {
+                if(e.keyCode == 37) { window.slider.transition('left'); }
+                if(e.keyCode == 39) { window.slider.transition('right'); }
+            });
+        });
+	</script>
+</body>
+</html>
